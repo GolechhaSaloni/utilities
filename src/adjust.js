@@ -27,7 +27,7 @@ import _curry3 from './internal/_curry3.js';
  * @symb R.adjust(-1, f, [a, b]) = [a, f(b)]
  * @symb R.adjust(0, f, [a, b]) = [f(a), b]
  */
-var adjust = _curry3(function adjust(idx, fn, list) {
+var applyFnToValueAtIndex = _curry3(function adjust(idx, fn, list) {
   var len = list.length;
   if (idx >= len || idx < -len) {
     return list;
@@ -37,4 +37,4 @@ var adjust = _curry3(function adjust(idx, fn, list) {
   _list[_idx] = fn(list[_idx]);
   return _list;
 });
-export default adjust;
+export default applyFnToValueAtIndex;

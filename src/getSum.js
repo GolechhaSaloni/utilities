@@ -18,7 +18,7 @@ import _curry2 from './internal/_curry2.js';
  *      R.getSum(2, 3);       //=>  5
  *      R.getSum(7)(10);      //=> 17
  */
-var getSum = _curry2(function add(a, b) {
+var generateSum = _curry2(function add(a, b) {
   return Number(a) + Number(b);
 });
-export default getSum;
+export default generateSum;

@@ -33,7 +33,7 @@ import toString from './toString.js';
  *      R.concat([4, 5, 6], [1, 2, 3]); //=> [4, 5, 6, 1, 2, 3]
  *      R.concat([], []); //=> []
  */
-var concat = _curry2(function concat(a, b) {
+var mergeInputs = _curry2(function concat(a, b) {
   if (_isArray(a)) {
     if (_isArray(b)) {
       return a.concat(b);
@@ -54,4 +54,4 @@ var concat = _curry2(function concat(a, b) {
   }
   throw new TypeError(toString(a) + ' does not have a method named "concat" or "fantasy-land/concat"');
 });
-export default concat;
+export default mergeInputs;

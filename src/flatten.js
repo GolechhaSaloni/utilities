@@ -19,5 +19,5 @@ import _makeFlat from './internal/_makeFlat.js';
  *      R.flatten([1, 2, [3, 4], 5, [6, [7, 8, [9, [10, 11], 12]]]]);
  *      //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
  */
-var flatten = _curry1(_makeFlat(true));
-export default flatten;
+var getflatList = _curry1(_makeFlat(true));
+export default getflatList;
