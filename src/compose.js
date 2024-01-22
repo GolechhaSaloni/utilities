@@ -27,7 +27,7 @@ import reverse from './reverse.js';
  * @symb R.compose(f, g, h)(a, b) = f(g(h(a, b)))
  * @symb R.compose(f, g, h)(a)(b) = f(g(h(a)))(b)
  */
-export default function compose() {
+export default function getComposedFn() {
   if (arguments.length === 0) {
     throw new Error('compose requires at least one argument');
   }

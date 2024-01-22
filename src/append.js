@@ -22,7 +22,7 @@ import _curry2 from './internal/_curry2.js';
  *      R.append('tests', []); //=> ['tests']
  *      R.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
  */
-var append = _curry2(function append(el, list) {
+var appendAtEnd = _curry2(function append(el, list) {
   return _concat(list, [el]);
 });
-export default append;
+export default appendAtEnd;

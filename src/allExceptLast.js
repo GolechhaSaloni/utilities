@@ -25,5 +25,5 @@ import slice from './slice.js';
  *      R.allExceptLast('a');    //=> ''
  *      R.allExceptLast('');     //=> ''
  */
-var allExceptLast = slice(0, -1);
-export default allExceptLast;
+var getAllExceptLast = slice(0, -1);
+export default getAllExceptLast;
